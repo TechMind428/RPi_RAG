@@ -1,0 +1,31 @@
+# 検索ツール比較スクリプト - 環境変数設定ファイル
+#
+# 使い方:
+# 1. このファイルを .env にコピー: cp env_example .env
+# 2. .env ファイルを編集して実際のAPIキーを設定
+# 3. .env ファイルは compare_search_tools.py と同じディレクトリに配置
+#
+# ディレクトリ構成:
+# ~/pi5-rag/
+# ├── compare_search_tools.py    ← スクリプト
+# ├── .env                        ← ここに配置！
+# ├── env_example                ← このファイル（テンプレート）
+# └── search_logs/
+
+# Tavily API キー
+# 取得方法: https://tavily.com/ でアカウント作成
+TAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Brave Search API キー
+# 取得方法: https://brave.com/search/api/ でアカウント作成
+# 注意: クレジットカード登録が必要
+BRAVE_API_KEY=BSA_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# SerpAPI キー
+# 取得方法: https://serpapi.com/ でアカウント作成
+SERPAPI_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 注意事項:
+# - DuckDuckGoはAPIキー不要です
+# - Gitにアップしている場合、このファイルは .gitignore に追加してください
+# - APIキーは絶対に公開しないでください
